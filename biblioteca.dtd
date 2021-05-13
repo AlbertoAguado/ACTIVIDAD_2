@@ -1,0 +1,21 @@
+<!ELEMENT biblioteca (libro*, revista*, periodico*)>
+
+<!ELEMENT libro (titulo+, capitulos?, indice?, sinopsis+)
+<!ATTLIST libro id CDATA #REQUIRED
+    tipo_clase (novela | infantil | didactico) #IMPLIED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT capitulos (capitulo+)>
+    <!ELEMENT capitulo (titulo+, contenido)>
+        <!ELEMENT titulo (#PCDATA)>
+        <!ELEMENT contenido (#PCDATA)>
+<!ELEMENT indice (#PCDATA)>
+<!ELEMENT sinopsis (#PCDATA)>
+
+<!ELEMENT revista (titulo +, numero +, indice ?, secciones +)
+<!ATTLIST revista id CDATA #REQUIRED
+    tipo_clase (informatica | corazon | coches | investigacion | otras) #IMPLIED>
+
+<!ELEMENT periodico (secciones +, indice +)
+<!ATTLIST periodico id CDATA #REQUIRED
+    tipo_clase (nacional | internacional) #IMPLIED
+    fecha_de_publicacion CDATA #REQUIRED>
