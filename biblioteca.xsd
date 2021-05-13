@@ -42,7 +42,7 @@
                     <complexType>
                         <sequence>
                             <element name="titulo_revista" type="string"></element>
-                            <element name="numero"></element>
+                            <element name="numero" type="int"></element>
                             <element name="indice_revista"></element>
                             <element name="secciones_revista">
                                 <complexType>
@@ -86,7 +86,6 @@
                                                 </sequence>
                                                 <attribute name="tipo" type="string" use="required"></attribute>
                                             </complexType>
-                                            <attribute name="autor" type="string" use="required"></attribute>
                                         </element>
                                     </sequence>
                                 </complexType>
@@ -96,7 +95,7 @@
                         </sequence>
                         <attribute name="id" type="integer" use="required"></attribute>
                         <attribute name="tipo_clase" type="string" use="required"></attribute>
-                        <attribute name="fecha_de_publicacion" type="integer" use="required"></attribute>
+                        <attribute name="fecha_de_publicacion" type="date" use="required"></attribute>
                     </complexType>
                 </element>
             </sequence>

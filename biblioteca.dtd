@@ -22,7 +22,7 @@
 <!ELEMENT indice_revista (#PCDATA)>
 <!ELEMENT secciones_revista (seccion+)>
     <!ELEMENT seccion_revista (contenido_seccion)>
-    <!ATTLIST seccion_revista paginas #REQUIRED>
+    <!ATTLIST seccion_revista paginas CDATA #REQUIRED>
         <!ELEMENT contenido_seccion (#PCDATA)>
 
 <!ELEMENT periodico (secciones+, indice+)>

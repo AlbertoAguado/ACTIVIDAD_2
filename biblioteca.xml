@@ -94,11 +94,11 @@ xsi:noNamespaceSchemaLocation= "biblioteca.xsd">
 
     <revista id="65465" tipo_clase="informatica" paginas="154">
         <titulo_revista>
-
+            Computer hoy
         </titulo_revista>
 
         <numero>
-
+            1236
         </numero>
 
         <indice_revista>
@@ -107,13 +107,24 @@ xsi:noNamespaceSchemaLocation= "biblioteca.xsd">
 
         <secciones_revista>
             <seccion_revista paginas="16">
-                <contenido_seccion></contenido_seccion>
+                <contenido_seccion>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa minima porro totam deleniti. Molestiae perspiciatis atque excepturi consequuntur quo id debitis quod autem, illum adipisci facilis eveniet ab cupiditate?
+                </contenido_seccion>
+            </seccion_revista>
+            <seccion_revista paginas="20">
+                <contenido_seccion>
+                    Recusandae voluptatum et quo atque laudantium voluptas nulla enim adipisci sunt natus? Nostrum cupiditate qui deleniti et ipsum eum reiciendis aperiam quod soluta labore? Maxime dicta necessitatibus sit excepturi odio?
+                </contenido_seccion>
+            </seccion_revista>
+            <seccion_revista paginas="12">
+                <contenido_seccion>
+                    Ut accusantium reprehenderit magni fugiat possimus repellendus excepturi eveniet quam quibusdam odio obcaecati voluptatem mollitia corrupti, dicta vitae, nemo quo ullam ducimus cum laboriosam nihil laudantium? Odit laudantium nemo pariatur.
+                </contenido_seccion>
             </seccion_revista>
         </secciones_revista>
-        
     </revista>
 
-    <periodico id="45" tipo_clase="" fecha_de_publicacion="">
+    <periodico id="45" tipo_clase="asdf" fecha_de_publicacion="2021-05-13">
         <secciones_periodico>
             <seccion_periodico tipo="">
                 <articulo autor="">
