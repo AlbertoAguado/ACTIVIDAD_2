@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--<!DOCTYPE biblioteca []>-->
 <!--<!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">-->
 
 <!--Existen tres tipos de documentos almacenados en la biblioteca: libros, revistas y periódicos. Todos los documentos están identificados por el atributo Id.
@@ -15,38 +16,38 @@ Dentro de los periódicos tenemos secciones y un índice. Cada sección debe con
 
 <biblioteca>
     <libro id="" tipo_clase="didactico" paginas="639">
-        <titulo>
+        <titulo_libro>
             Una breve historia de casi todo
-        </titulo>
+        </titulo_libro>
         
         <capitulos>
             <capitulo paginas="63">
-                <titulo>Perdidos en el Cosmos</titulo>
-                <contenido></contenido>
-            </capitulo>
+                <titulo_capitulo>Perdidos en el Cosmos</titulo_capitulo>
+                <contenido_capitulo></contenido_capitulo>
+            </capitulo>contenido_capitulo
             <capitulo paginas="61">
-                <titulo>El tamaño de la Tierra</titulo>
-                <contenido></contenido>
+                <titulo_capitulo>El tamaño de la Tierra</titulo_capitulo>
+                <contenido_capitulo></contenido_capitulo>
             </capitulo>
             <capitulo paginas="88">
-                <titulo>Nace una nueva era</titulo>
-                <contenido></contenido>
+                <titulo_capitulo>Nace una nueva era</titulo_capitulo>
+                <contenido_capitulo></contenido_capitulo>
             </capitulo>
             <capitulo paginas="41">
-                <titulo>Un planeta peligroso</titulo>
-                <contenido></contenido>
+                <titulo_capitulo>Un planeta peligroso</titulo_capitulo>
+                <contenido_capitulo></contenido_capitulo>
             </capitulo>
             <capitulo paginas="197">
-                <titulo>La vida misma</titulo>
-                <contenido></contenido>
+                <titulo_capitulo>La vida misma</titulo_capitulo>
+                <contenido_capitulo></contenido_capitulo>
             </capitulo>
             <capitulo paginas="58">
-                <titulo>El camino hasta nosotros</titulo>
-                <contenido></contenido>
+                <titulo_capitulo>El camino hasta nosotros</titulo_capitulo>
+                <contenido_capitulo></contenido_capitulo>
             </capitulo>
         </capitulos>
         
-        <indice>
+        <indice_libro>
             2.1	Capítulo I: Perdidos en el cosmos
             2.1.1	1. Cómo construir un universo
             2.1.2	2. Bienvenido al sistema solar
@@ -83,49 +84,47 @@ Dentro de los periódicos tenemos secciones y un índice. Cada sección debe con
             2.6.2	28. El bípedo misterioso
             2.6.3	29. El mono inquieto
             2.6.4	30. Adiós
-        </indice>
+        </indice_libro>
 
         <sinopsis>
             ¿Puede un solo libro convertirse en la perfecta introducción para adentrarse en disciplinas tan dispares como la astronomía, la geología, la física, la química y la biología? ¿Puede un trabajo de divulgación científica ofrecer razonamientos y datos precisos, y al mismo tiempo ser tremendamente entretenido? ¿Puede una única obra narrar la historia de los grandes descubrimientos de la ciencia y contarnos también divertidas anécdotas relacionadas con estos extraordinarios logros? Con Una breve historia de casi todo, Bill Bryson nos propone un fascinante recorrido por la historia del universo que nos rodea y los conocimientos que nos han llevado a comprenderlo un poco mejor.
         </sinopsis>
     </libro>
 
-    <revista id="" tipo_clase="" paginas="">
-        <titulo>
+    <revista id="" tipo_clase="informatica" paginas="154">
+        <titulo_revista>
 
-        </titulo>
+        </titulo_revista>
 
         <numero>
 
         </numero>
 
-        <indice>
+        <indice_revista>
 
-        </indice>
+        </indice_revista>
 
-        <secciones>
-            <seccion paginas="">
-                <contenido></contenido>
-            </seccion>
-        </secciones>
+        <secciones_revista>
+            <seccion_revista paginas="16">
+                <contenido_seccion></contenido_seccion>
+            </seccion_revista>
+        </secciones_revista>
         
     </revista>
 
     <periodico id="" tipo_clase="" fecha_de_publicacion="">
-        <secciones>
-            <seccion tipo="">
+        <secciones_periodico>
+            <seccion_periodico tipo="">
                 <articulo autor="">
     
                 </articulo>
                 <articulo autor="">
     
                 </articulo>
-            </seccion>
-        </secciones>
-        <indice>
+            </seccion_periodico>
+        </secciones_periodico>
+        <indice_periodico>
 
-        </indice>
-        
-        
+        </indice_periodico>
     </periodico>
 </biblioteca>

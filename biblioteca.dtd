@@ -1,21 +1,36 @@
 <!ELEMENT biblioteca (libro*, revista*, periodico*)>
 
-<!ELEMENT libro (titulo+, capitulos?, indice?, sinopsis+)
+<!ELEMENT libro (titulo_libro+, capitulos?, indice_libro?, sinopsis+)>
 <!ATTLIST libro id CDATA #REQUIRED
-    tipo_clase (novela | infantil | didactico) #IMPLIED>
-<!ELEMENT titulo (#PCDATA)>
+    tipo_clase (novela | infantil | didactico) #IMPLIED
+    paginas CDATA #REQUIRED>
+<!ELEMENT titulo_libro (#PCDATA)>
 <!ELEMENT capitulos (capitulo+)>
-    <!ELEMENT capitulo (titulo+, contenido)>
-        <!ELEMENT titulo (#PCDATA)>
-        <!ELEMENT contenido (#PCDATA)>
-<!ELEMENT indice (#PCDATA)>
+    <!ELEMENT capitulo (titulo_capitulo+, contenido_capitulo)>
+    <!ATTLIST capitulo paginas CDATA #REQUIRED>
+        <!ELEMENT titulo_capitulo (#PCDATA)>
+        <!ELEMENT contenido_capitulo (#PCDATA)>
+<!ELEMENT indice_libro (#PCDATA)>
 <!ELEMENT sinopsis (#PCDATA)>
 
-<!ELEMENT revista (titulo +, numero +, indice ?, secciones +)
+<!ELEMENT revista (titulo_revista+, numero+, indice?, secciones+)>
 <!ATTLIST revista id CDATA #REQUIRED
-    tipo_clase (informatica | corazon | coches | investigacion | otras) #IMPLIED>
+    tipo_clase (informatica | corazon | coches | investigacion | otras) #IMPLIED
+    paginas CDATA #REQUIRED>
+<!ELEMENT titulo_revista (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT indice_revista (#PCDATA)>
+<!ELEMENT secciones_revista (seccion+)>
+    <!ELEMENT seccion_revista (contenido_seccion)>
+    <!ATTLIST seccion_revista paginas #REQUIRED>
+        <!ELEMENT contenido_seccion (#PCDATA)>
 
-<!ELEMENT periodico (secciones +, indice +)
+<!ELEMENT periodico (secciones+, indice+)>
 <!ATTLIST periodico id CDATA #REQUIRED
     tipo_clase (nacional | internacional) #IMPLIED
     fecha_de_publicacion CDATA #REQUIRED>
+<!ELEMENT secciones_periodico (seccion)>
+    <!ELEMENT seccion_periodico (articulo+)>
+    <!ELEMENT articulo (#PCDATA)>
+    <!ATTLIST articulo autor CDATA #REQUIRED>
+<!ELEMENT indice_periodico (#PCDATA)>
