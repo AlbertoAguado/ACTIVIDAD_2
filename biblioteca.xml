@@ -117,10 +117,10 @@ xsi:noNamespaceSchemaLocation= "biblioteca.xsd">
         <secciones_periodico>
             <seccion_periodico tipo="">
                 <articulo autor="">
-    
+                    <contenido_articulo></contenido_articulo>
                 </articulo>
                 <articulo autor="">
-    
+                    <contenido_articulo></contenido_articulo>
                 </articulo>
             </seccion_periodico>
         </secciones_periodico>

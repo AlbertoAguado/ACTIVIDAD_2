@@ -75,7 +75,13 @@
                                         <element name="seccion_periodico" minOccurs="1" maxOccurs="unbounded">
                                             <complexType>
                                                 <sequence>
-                                                    <element name="articulo" type="string">
+                                                    <element name="articulo" minOccurs="1" maxOccurs="unbounded">
+                                                        <complexType>
+                                                            <sequence>
+                                                                <element name="contenido_articulo"></element>
+                                                                </sequence>
+                                                                <attribute name="autor" type="string" use="required"></attribute>
+                                                            </complexType>
                                                     </element>
                                                 </sequence>
                                                 <attribute name="tipo" type="string" use="required"></attribute>
