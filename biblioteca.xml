@@ -14,8 +14,9 @@ En el caso de las revistas empieza por la letra “R”. -->
 <!--Los periódicos se clasifican en nacionales e internacionales. Cada periódico contiene el atributo tipo_clase identificativo de la clase a la que pertenece y un atributo que incluye la fecha de publicación.
 Dentro de los periódicos tenemos secciones y un índice. Cada sección debe contener un atributo identificativo del tipo de sección, que puede ser: económica, opinión, deportes, nacional o internacional. Las secciones se dividen en artículos, en donde se define en un atributo el autor. Finalmente, el contenido será el último elemento del árbol, que necesita un atributo que referencie a la información. -->
 
-<biblioteca>
-    <libro id="" tipo_clase="didactico" paginas="639">
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation= "biblioteca.xsd">
+    <libro id="56465" tipo_clase="didactico" paginas="639">
         <titulo_libro>
             Una breve historia de casi todo
         </titulo_libro>
@@ -24,7 +25,7 @@ Dentro de los periódicos tenemos secciones y un índice. Cada sección debe con
             <capitulo paginas="63">
                 <titulo_capitulo>Perdidos en el Cosmos</titulo_capitulo>
                 <contenido_capitulo></contenido_capitulo>
-            </capitulo>contenido_capitulo
+            </capitulo>
             <capitulo paginas="61">
                 <titulo_capitulo>El tamaño de la Tierra</titulo_capitulo>
                 <contenido_capitulo></contenido_capitulo>
@@ -91,7 +92,7 @@ Dentro de los periódicos tenemos secciones y un índice. Cada sección debe con
         </sinopsis>
     </libro>
 
-    <revista id="" tipo_clase="informatica" paginas="154">
+    <revista id="65465" tipo_clase="informatica" paginas="154">
         <titulo_revista>
 
         </titulo_revista>
@@ -112,7 +113,7 @@ Dentro de los periódicos tenemos secciones y un índice. Cada sección debe con
         
     </revista>
 
-    <periodico id="" tipo_clase="" fecha_de_publicacion="">
+    <periodico id="45" tipo_clase="" fecha_de_publicacion="">
         <secciones_periodico>
             <seccion_periodico tipo="">
                 <articulo autor="">

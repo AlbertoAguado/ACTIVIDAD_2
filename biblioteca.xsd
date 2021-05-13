@@ -8,51 +8,92 @@
     <element name="biblioteca">
         <complexType>
             <sequence>
-                <element name="Titulo" type="string" />
-                <element name="Autor" type="string" minOccurs="1" maxOccurs="unbounded" />
-                <element name="Editorial">
+                <!-- LIBRO -->
+                <element name="libro">
                     <complexType>
                         <sequence>
-                            <element name="nombre" type="string"></element>
-                            <element name="direccion" type="string"></element>
+                            <element name="titulo_libro" type="string"></element>
+                            <element name="capitulos" minOccurs="0">
+                                <complexType>
+                                    <sequence>
+                                        <element name="capitulo" minOccurs="1" maxOccurs="unbounded">
+                                            <complexType>
+                                                <sequence>
+                                                    <element name="titulo_capitulo" type="string"></element>
+                                                    <element name="contenido_capitulo" type="string"></element>
+                                                </sequence>
+                                                <attribute name="paginas" type="integer" use="required"></attribute>
+                                            </complexType>
+                                        </element>
+                                    </sequence>
+                                </complexType>
+                            </element>
+                            <element name="indice_libro" type="string" minOccurs="0"></element>
+                            <element name="sinopsis" type="string"></element>
                         </sequence>
+                        <attribute name="id" type="integer" use="required"></attribute>
+                        <attribute name="tipo_clase" type="string" use="required"></attribute>
+                        <attribute name="paginas" type="integer" use="required"></attribute>
+                    </complexType> 
+                </element>
+
+                <!-- REVISTA -->
+                <element name="revista">
+                    <complexType>
+                        <sequence>
+                            <element name="titulo_revista" type="string"></element>
+                            <element name="numero"></element>
+                            <element name="indice_revista"></element>
+                            <element name="secciones_revista">
+                                <complexType>
+                                    <sequence>
+                                        <element name="seccion_revista" minOccurs="1" maxOccurs="unbounded">
+                                            <complexType>
+                                                <sequence>
+                                                    <element name="contenido_seccion" type="string"></element>
+                                                </sequence>
+                                                <attribute name="paginas" type="integer" use="required"></attribute>
+                                            </complexType>  
+                                        </element>
+                                    </sequence>
+                                </complexType>  
+                            </element>
+                        </sequence>
+                        <attribute name="id" type="integer" use="required"></attribute>
+                        <attribute name="tipo_clase" type="string" use="required"></attribute>
+                        <attribute name="paginas" type="integer" use="required"></attribute>
                     </complexType>  
                 </element>
-                <!-- Optativa la fecha de edicion -->
-                <element name="fecha_edicion" type="date" minOccurs="0"></element>
 
-                <!-- Algunos casos mas particulares -->
-                <!--
-                Elemento vacio simple, estos elementos deberian de ser autoexplicativos y que
-                el tener la etiqueta o no tenerla ya aportaria información.            
-                Al poner minOccurs a 0, lo estamos haciendo optativo
-                -->
-                <element name="bestseller" minOccurs="0">
-                    <complexType />
-                </element>
-
-                <!-- Elemento vacio con un atributo-->
-                <element name="paginas">
+                <!-- PERIODICO -->
+                <element name="periodico">
                     <complexType>
-                        <attribute name="valor" use="required"></attribute>
-                    </complexType>
-                </element>
-
-                <!-- Ejemplo de nodo simple de tipo String pero con atributos -->
-                <element name="prologo">
-                    <complexType>
-                        <simpleContent>
-                            <extension base="string">
-                                <attribute name="pagina"></attribute>
-                            </extension>
-                        </simpleContent>
+                        <sequence>
+                            <element name="secciones_periodico">
+                                <complexType>
+                                    <sequence>
+                                        <element name="seccion_periodico" minOccurs="1" maxOccurs="unbounded">
+                                            <complexType>
+                                                <sequence>
+                                                    <element name="articulo" type="string">
+                                                    </element>
+                                                </sequence>
+                                                <attribute name="tipo" type="string" use="required"></attribute>
+                                            </complexType>
+                                            <attribute name="autor" type="string" use="required"></attribute>
+                                        </element>
+                                    </sequence>
+                                </complexType>
+                            </element>
+                            <element name="indice_periodico" type="string">
+                            </element>
+                        </sequence>
+                        <attribute name="id" type="integer" use="required"></attribute>
+                        <attribute name="tipo_clase" type="string" use="required"></attribute>
+                        <attribute name="fecha_de_publicacion" type="integer" use="required"></attribute>
                     </complexType>
                 </element>
             </sequence>
-            <!-- Los atributos son optativos por defecto-->
-            <attribute name="precio" type="double"></attribute>
-            <!-- Podemos hacer los atributos obligatorios -->
-            <attribute name="id" type="integer" use="required"></attribute>
         </complexType>
     </element>
 </schema>
