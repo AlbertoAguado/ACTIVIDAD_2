@@ -16,7 +16,7 @@ Dentro de los periódicos tenemos secciones y un índice. Cada sección debe con
 
 <biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:noNamespaceSchemaLocation= "biblioteca.xsd">
-    <libro id="56465" tipo_clase="didactico" paginas="639">
+    <libro id="L5646" tipo_clase="didactico" paginas="639">
         <titulo_libro>
             Una breve historia de casi todo
         </titulo_libro>
@@ -92,7 +92,7 @@ xsi:noNamespaceSchemaLocation= "biblioteca.xsd">
         </sinopsis>
     </libro>
 
-    <revista id="65465" tipo_clase="informatica" paginas="154">
+    <revista id="R4568" tipo_clase="informatica" paginas="154">
         <titulo_revista>
             Computer hoy
         </titulo_revista>
@@ -124,9 +124,9 @@ xsi:noNamespaceSchemaLocation= "biblioteca.xsd">
         </secciones_revista>
     </revista>
 
-    <periodico id="45" tipo_clase="asdf" fecha_de_publicacion="2021-05-13">
+    <periodico id="P4578" tipo_clase="nacional" fecha_de_publicacion="2021-05-13">
         <secciones_periodico>
-            <seccion_periodico tipo="">
+            <seccion_periodico tipo="internacional">
                 <articulo autor="">
                     <contenido_articulo></contenido_articulo>
                 </articulo>
