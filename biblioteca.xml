@@ -128,10 +128,18 @@ xsi:noNamespaceSchemaLocation= "biblioteca.xsd">
         <secciones_periodico>
             <seccion_periodico tipo="internacional">
                 <articulo autor="">
-                    <contenido_articulo></contenido_articulo>
+                    <contenido_articulo>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit libero vel ipsa consequuntur mollitia eaque modi architecto, sed, praesentium sequi accusantium aspernatur, obcaecati sint iusto ad quibusdam asperiores quas ullam!
+                        Quasi, neque voluptatum non, unde minus enim minima reiciendis, ea animi ullam explicabo quo. Animi culpa temporibus eaque cum debitis quo magni cupiditate, quisquam saepe molestias fuga laborum assumenda eligendi.
+                        Illo enim amet rerum, nobis reprehenderit neque quae alias placeat id nam tempora numquam nemo cumque hic dolorum culpa asperiores aspernatur? Quod odit exercitationem nemo, vero dolorum temporibus odio velit?
+                    </contenido_articulo>
                 </articulo>
                 <articulo autor="">
-                    <contenido_articulo></contenido_articulo>
+                    <contenido_articulo>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto inventore expedita fuga alias veritatis. Accusamus delectus iusto laborum harum dolores expedita officiis velit mollitia optio earum! Adipisci facilis vel voluptatum.
+                        Illum molestias, odit beatae minus repudiandae temporibus quidem quis quae cumque adipisci debitis asperiores, soluta magni quasi labore eligendi, facere quisquam doloribus. Voluptatem qui optio eaque rerum reprehenderit minus sint.
+                        Ratione animi ipsum ipsa quia porro? Deleniti nesciunt rerum temporibus dolorum ducimus officia sit sunt molestiae totam, aliquam debitis excepturi autem veritatis, tempore quos fugiat soluta tenetur hic cum molestias?
+                    </contenido_articulo>
                 </articulo>
             </seccion_periodico>
         </secciones_periodico>

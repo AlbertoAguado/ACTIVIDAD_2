@@ -13,24 +13,26 @@
 <!ELEMENT indice_libro (#PCDATA)>
 <!ELEMENT sinopsis (#PCDATA)>
 
-<!ELEMENT revista (titulo_revista+, numero+, indice?, secciones+)>
+<!ELEMENT revista (titulo_revista+, numero+, indice_revista?, secciones_revista+)>
 <!ATTLIST revista id CDATA #REQUIRED
     tipo_clase (informatica | corazon | coches | investigacion | otras) #IMPLIED
     paginas CDATA #REQUIRED>
 <!ELEMENT titulo_revista (#PCDATA)>
 <!ELEMENT numero (#PCDATA)>
 <!ELEMENT indice_revista (#PCDATA)>
-<!ELEMENT secciones_revista (seccion+)>
+<!ELEMENT secciones_revista (seccion_revista+)>
     <!ELEMENT seccion_revista (contenido_seccion)>
     <!ATTLIST seccion_revista paginas CDATA #REQUIRED>
         <!ELEMENT contenido_seccion (#PCDATA)>
 
-<!ELEMENT periodico (secciones+, indice+)>
+<!ELEMENT periodico (secciones_periodico+, indice_periodico+)>
 <!ATTLIST periodico id CDATA #REQUIRED
     tipo_clase (nacional | internacional) #IMPLIED
     fecha_de_publicacion CDATA #REQUIRED>
-<!ELEMENT secciones_periodico (seccion)>
+<!ELEMENT secciones_periodico (seccion_periodico)>
     <!ELEMENT seccion_periodico (articulo+)>
-    <!ELEMENT articulo (#PCDATA)>
+    <!ATTLIST seccion_periodico tipo (economica | opinion | deportes | nacional | internacional) #IMPLIED>
+    <!ELEMENT articulo (contenido_articulo+)>
     <!ATTLIST articulo autor CDATA #REQUIRED>
+    <!ELEMENT contenido_articulo (#PCDATA)>
 <!ELEMENT indice_periodico (#PCDATA)>
